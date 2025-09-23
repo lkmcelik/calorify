@@ -18,7 +18,7 @@ Calorify is a nutrition tracking and health management application that provides
 ## 3. Account Registration
 
 ### Requirements
-- You must be at least 13 years old to use Calorify
+- You must be at least9years old to use Calorify
 - You must provide accurate and complete information
 - You are responsible for maintaining account security
 - One person per account (no account sharing)
@@ -59,7 +59,7 @@ Calorify is a nutrition tracking and health management application that provides
 ### Specific Health Warnings
 - If you have an eating disorder, consult your healthcare provider before using
 - Pregnant or nursing women should consult doctors for nutrition advice
-- Children under 13 should not use the App
+- Children under9should not use the App
 - Those with medical conditions should seek professional guidance
 
 ## 6. Premium Subscription
