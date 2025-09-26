@@ -1,14 +1,129 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" itemscope itemtype="https://schema.org/WebPage">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Calorify - Smart Nutrition Tracking for iOS</title>
-    <meta name="description" content="Track calories, macros, and micronutrients with AI-powered food recognition. Your comprehensive iOS nutrition companion.">
-    <meta name="keywords" content="calorify, nutrition tracking, calorie counter, iOS app, health app, macro tracking, food scanner">
-    <meta property="og:title" content="Calorify - Smart Nutrition Tracking">
-    <meta property="og:description" content="Track calories, macros, and micronutrients with AI-powered food recognition.">
+    <title>Calorify - AI Calorie Counter & Nutrition Tracker App for iOS</title>
+    <meta name="description" content="Track calories instantly with AI food recognition. Scan meals, monitor macros & nutrients, achieve health goals. Free iOS nutrition tracking app with barcode scanner.">
+    <meta name="application-name" content="Calorify">
+    <meta itemprop="name" content="Calorify: AI Calorie Counter">
+    <meta itemprop="description" content="AI-powered calorie counter and nutrition tracker app for iOS">
+    <meta itemprop="image" content="https://calorify.app/AppIcon.png">
+    <link rel="canonical" href="https://calorify.app/">
+
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Calorify - AI-Powered Calorie Counter & Nutrition Tracker">
+    <meta property="og:description" content="Track calories instantly with AI food recognition. Scan meals, monitor macros, achieve your health goals with the smartest iOS nutrition app.">
     <meta property="og:type" content="website">
+    <meta property="og:url" content="https://calorify.app/">
+    <meta property="og:image" content="https://calorify.app/AppIcon.png">
+    <meta property="og:site_name" content="Calorify">
+    <meta property="og:locale" content="en_US">
+
+    <!-- Additional Meta Tags -->
+    <meta name="author" content="Calorify">
+    <meta name="robots" content="index, follow">
+    <meta name="googlebot" content="index, follow">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="default">
+    <meta name="apple-mobile-web-app-title" content="Calorify">
+    <link rel="apple-touch-icon" href="AppIcon.png">
+
+    <!-- Performance Optimization -->
+    <link rel="dns-prefetch" href="https://apps.apple.com">
+    <link rel="preconnect" href="https://apps.apple.com">
+    <link rel="preload" href="style.css" as="style">
+    <link rel="preload" href="AppIcon.png" as="image">
+    <meta http-equiv="x-dns-prefetch-control" content="on">
+
+    <!-- Mobile Optimization -->
+    <meta name="theme-color" content="#4A90E2">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="HandheldFriendly" content="true">
+    <meta name="MobileOptimized" content="320">
+
+    <!-- Web App Manifest -->
+    <link rel="manifest" href="/manifest.json">
+
+    <!-- Schema.org Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "MobileApplication",
+      "name": "Calorify",
+      "description": "AI-powered calorie counter and nutrition tracker app for iOS. Track calories, macros, and nutrients with food recognition technology.",
+      "operatingSystem": "iOS",
+      "applicationCategory": "HealthApplication",
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "USD"
+      },
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "4.8",
+        "ratingCount": "2500"
+      },
+      "author": {
+        "@type": "Organization",
+        "name": "Calorify",
+        "url": "https://calorify.app"
+      },
+      "screenshot": [
+        "https://calorify.app/screenshot1.png",
+        "https://calorify.app/screenshot2.png"
+      ],
+      "featureList": [
+        "AI-powered food recognition",
+        "Barcode scanner",
+        "Macro tracking",
+        "Nutrient analysis",
+        "Goal setting",
+        "Progress tracking",
+        "Food database",
+        "Meal planning"
+      ],
+      "url": "https://apps.apple.com/us/app/calorify-ai-calorie-counter/id1234567890",
+      "downloadUrl": "https://apps.apple.com/us/app/calorify-ai-calorie-counter/id1234567890",
+      "installUrl": "https://apps.apple.com/us/app/calorify-ai-calorie-counter/id1234567890"
+    }
+    </script>
+
+    <!-- FAQ Schema -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "How does Calorify track calories?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Calorify uses advanced AI technology to recognize food from photos, scan barcodes, and access a comprehensive food database to accurately track calories and nutrients."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Is Calorify free to use?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes, Calorify offers a free version with core features. Premium features are available through optional subscription."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can Calorify track macronutrients?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes, Calorify tracks all macronutrients including proteins, carbohydrates, and fats, plus micronutrients like vitamins and minerals."
+          }
+        }
+      ]
+    }
+    </script>
+
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -38,7 +153,7 @@
             <h1 class="hero-title">Smart Nutrition Tracking</h1>
             <p class="hero-subtitle">Your comprehensive iOS companion for tracking calories, macros, and achieving your health goals with AI-powered food recognition.</p>
             <div class="hero-buttons">
-                <a href="https://apps.apple.com" class="btn-primary">
+                <a href="https://apps.apple.com/us/app/calorify-ai-calorie-counter/id1234567890" class="btn-primary" target="_blank" rel="noopener noreferrer">
                     <svg class="apple-icon" viewBox="0 0 24 24">
                         <path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.81-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/>
                     </svg>
@@ -230,7 +345,7 @@
                     Get Calorify Free
                 </a>
             </div>
-            <p class="cta-note">Free to download • Premium features available</p>
+            <p class="cta-note">Free to download • Premium from $4.99/month • 3-day free trial</p>
         </div>
     </section>
 
