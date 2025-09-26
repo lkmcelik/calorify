@@ -65,7 +65,7 @@ Calorify is a nutrition tracking and health management application that provides
 ## 6. Premium Subscription
 
 ### Subscription Options
-- **Monthly**: $4.99/month
+- **Monthly**: $4.99/month (includes 3-days free trial)
 - **Annual**: $49.99/year (includes 1-week free trial)
 
 ### Billing

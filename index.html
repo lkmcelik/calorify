@@ -22,8 +22,24 @@
 
     <!-- Additional Meta Tags -->
     <meta name="author" content="Calorify">
-    <meta name="robots" content="index, follow">
+    <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
     <meta name="googlebot" content="index, follow">
+
+    <!-- AEO Optimization for AI Crawlers -->
+    <meta name="bingbot" content="index, follow">
+    <meta name="GPTBot" content="index, follow">
+    <meta name="ClaudeBot" content="index, follow">
+    <meta name="PerplexityBot" content="index, follow">
+    <meta name="ChatGPT-User" content="index, follow">
+
+    <!-- Enhanced Content Description for AI Understanding -->
+    <meta name="subject" content="AI-powered calorie counting and nutrition tracking">
+    <meta name="topic" content="Health, Fitness, Nutrition, Weight Loss, Calorie Counter">
+    <meta name="summary" content="Calorify uses AI to instantly recognize food from photos and track calories. Alternative to MyFitnessPal at 75% less cost.">
+    <meta name="classification" content="Health & Fitness Application">
+    <meta name="category" content="iOS Health App">
+
+    <!-- Mobile App Meta Tags -->
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="default">
     <meta name="apple-mobile-web-app-title" content="Calorify">
@@ -71,8 +87,15 @@
         "url": "https://calorify.app"
       },
       "screenshot": [
-        "https://calorify.app/screenshot1.png",
-        "https://calorify.app/screenshot2.png"
+        "https://calorify.app/img/1.png",
+        "https://calorify.app/img/2.png",
+        "https://calorify.app/img/3.png",
+        "https://calorify.app/img/4.png",
+        "https://calorify.app/img/5.png",
+        "https://calorify.app/img/6.png",
+        "https://calorify.app/img/7.png",
+        "https://calorify.app/img/8.png",
+        "https://calorify.app/img/9.png"
       ],
       "featureList": [
         "AI-powered food recognition",
@@ -118,6 +141,143 @@
           "acceptedAnswer": {
             "@type": "Answer",
             "text": "Yes, Calorify tracks all macronutrients including proteins, carbohydrates, and fats, plus micronutrients like vitamins and minerals."
+          }
+        }
+      ]
+    }
+    </script>
+
+    <!-- HowTo Schema for AI Optimization -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "HowTo",
+      "name": "How to Track Calories with Calorify AI App",
+      "description": "Learn how to use Calorify's AI-powered features to track calories, scan food with your camera, and monitor your nutrition goals",
+      "image": "https://calorify.app/AppIcon.png",
+      "totalTime": "PT2M",
+      "supply": [
+        {
+          "@type": "HowToSupply",
+          "name": "iPhone or iPad with Calorify app installed"
+        }
+      ],
+      "step": [
+        {
+          "@type": "HowToStep",
+          "name": "Download and Install Calorify",
+          "text": "Download Calorify from the App Store. It's free with optional premium features.",
+          "url": "https://calorify.app#download",
+          "image": "https://calorify.app/img/1.png"
+        },
+        {
+          "@type": "HowToStep",
+          "name": "Set Up Your Profile",
+          "text": "Enter your age, weight, height, and fitness goals. Calorify will calculate your daily calorie budget.",
+          "url": "https://calorify.app#setup",
+          "image": "https://calorify.app/img/2.png"
+        },
+        {
+          "@type": "HowToStep",
+          "name": "Track Food with AI Camera",
+          "text": "Take a photo of any meal. The AI instantly recognizes the food and calculates calories and nutrients.",
+          "url": "https://calorify.app#ai-tracking",
+          "image": "https://calorify.app/img/3.png"
+        },
+        {
+          "@type": "HowToStep",
+          "name": "Use Voice Commands",
+          "text": "Tap the microphone and say what you ate. For example: 'I had grilled chicken with rice for lunch.'",
+          "url": "https://calorify.app#voice",
+          "image": "https://calorify.app/img/4.png"
+        },
+        {
+          "@type": "HowToStep",
+          "name": "Track Water Intake",
+          "text": "Use quick-add buttons to log your water consumption throughout the day.",
+          "url": "https://calorify.app#water",
+          "image": "https://calorify.app/img/5.png"
+        },
+        {
+          "@type": "HowToStep",
+          "name": "Review Your Progress",
+          "text": "Check daily, weekly, and monthly reports to see your nutrition trends and progress toward goals.",
+          "url": "https://calorify.app#progress",
+          "image": "https://calorify.app/img/6.png"
+        }
+      ]
+    }
+    </script>
+
+    <!-- WebSite Schema with SearchAction -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      "name": "Calorify",
+      "description": "AI-powered calorie counter and nutrition tracker app for iOS",
+      "url": "https://calorify.app",
+      "potentialAction": {
+        "@type": "SearchAction",
+        "target": "https://calorify.app/search?q={search_term_string}",
+        "query-input": "required name=search_term_string"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "Calorify",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://calorify.app/AppIcon.png"
+        }
+      }
+    }
+    </script>
+
+    <!-- SoftwareApplication Schema for Better App Discovery -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "SoftwareApplication",
+      "name": "Calorify: AI Calorie Counter",
+      "applicationCategory": "HealthApplication",
+      "operatingSystem": "iOS 15.0 or later",
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "USD",
+        "priceValidUntil": "2025-12-31",
+        "availability": "https://schema.org/InStock"
+      },
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "4.8",
+        "ratingCount": "2500",
+        "bestRating": "5",
+        "worstRating": "1"
+      },
+      "softwareVersion": "1.0",
+      "softwareRequirements": "iOS 15.0+, iPhone 6s or later",
+      "permissions": "camera, healthkit, notifications",
+      "inLanguage": ["en", "es", "fr", "de", "it", "ja", "ko", "ar", "pt", "ru", "nl", "hi", "pl", "tr"],
+      "isAccessibleForFree": true,
+      "hasPart": [
+        {
+          "@type": "SoftwareApplication",
+          "name": "Premium Features",
+          "offers": {
+            "@type": "Offer",
+            "price": "4.99",
+            "priceCurrency": "USD",
+            "priceSpecification": {
+              "@type": "UnitPriceSpecification",
+              "price": "4.99",
+              "priceCurrency": "USD",
+              "referenceQuantity": {
+                "@type": "QuantitativeValue",
+                "value": "1",
+                "unitCode": "MON"
+              }
+            }
           }
         }
       ]
@@ -207,6 +367,9 @@
                         <div class="carousel-slide">
                             <img src="img/8.png" alt="Settings" loading="lazy">
                         </div>
+                        <div class="carousel-slide">
+                            <img src="img/9.png" alt="AI Insights & Reports" loading="lazy">
+                        </div>
                     </div>
                     <button class="carousel-btn carousel-next" aria-label="Next screenshot">
                         <svg viewBox="0 0 24 24">
@@ -223,6 +386,7 @@
                     <button class="carousel-dot" data-slide="5" aria-label="Go to slide 6"></button>
                     <button class="carousel-dot" data-slide="6" aria-label="Go to slide 7"></button>
                     <button class="carousel-dot" data-slide="7" aria-label="Go to slide 8"></button>
+                    <button class="carousel-dot" data-slide="8" aria-label="Go to slide 9"></button>
                 </div>
             </div>
             <div class="showcase-grid">
