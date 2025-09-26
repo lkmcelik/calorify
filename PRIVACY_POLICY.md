@@ -114,7 +114,7 @@ Supabase's privacy policy: https://supabase.com/privacy
 
 ## Children's Privacy
 
-Calorify is not intended for children under 13. We do not knowingly collect data from children under 13. If you believe we have collected data from a child, please contact us immediately.
+Calorify is not intended for children under 4. We do not knowingly collect data from children under 4. If you believe we have collected data from a child, please contact us immediately.
 
 ## International Data Transfers
 

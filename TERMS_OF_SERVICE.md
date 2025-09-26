@@ -222,7 +222,7 @@ We'll provide notices through the App, email, or other reasonable means.
 
 ## 16. Special Provisions for Minors
 
-- Users aged 13-17 need parental consent
+- Users aged 4-17 need parental consent
 - Parents are responsible for minor's use
 - We may terminate accounts if age misrepresented
 
