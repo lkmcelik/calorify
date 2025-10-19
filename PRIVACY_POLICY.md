@@ -1,6 +1,6 @@
 # Privacy Policy for Calorify
 
-Last Updated: January 2025
+Last Updated: October 19, 2025
 
 ## Introduction
 
@@ -85,6 +85,33 @@ We use Supabase for:
 - Real-time data synchronization
 
 Supabase's privacy policy: https://supabase.com/privacy
+
+### Meta/Facebook SDK
+We use Meta's SDK to measure the effectiveness of our advertising campaigns and improve user experience. This includes:
+
+#### Data Collected:
+- Installation and registration events
+- In-app user behavior and interactions
+- Purchase and subscription events
+- Device identifiers (IDFA when authorized via App Tracking Transparency)
+
+#### Purpose:
+- Advertising campaign optimization
+- Analytics and performance measurement
+- Fraud prevention
+- Product improvement
+
+#### Data Sharing:
+This data is shared with Meta (Facebook, Instagram) for advertising attribution and campaign optimization.
+
+#### User Control:
+You can control tracking permissions through:
+- iOS Settings → Privacy & Security → Tracking
+- Grant or deny permission when prompted by the app
+
+**More Information:**
+- Meta Privacy Policy: https://www.facebook.com/privacy/policy/
+- Facebook Business Tools: https://www.facebook.com/business/tools
 
 ### Apple Services
 - **HealthKit**: Optional integration for health data (you control what data is shared)
