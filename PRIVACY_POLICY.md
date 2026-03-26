@@ -1,6 +1,6 @@
 # Privacy Policy for Calorify
 
-Last Updated: March 27, 2026
+Last Updated: October 19, 2025
 
 ## Introduction
 
@@ -67,11 +67,8 @@ Calorify ("we," "our," or "us") is committed to protecting your privacy. This Pr
 
 ### We DO NOT:
 - Sell your personal information
-- Share your health or nutrition data with advertisers
+- Share data with advertisers
 - Use your health data for marketing
-
-### Advertising Attribution:
-With your consent (via App Tracking Transparency), we share limited device identifiers and app usage events (such as app install, registration, and subscription) with Meta for advertising measurement purposes. We never share your food logs, health data, or nutrition information with advertisers. See the Third-Party Services section for full details.
 
 ### We MAY Share Data:
 1. **With Your Consent**: When you explicitly authorize sharing
@@ -89,8 +86,8 @@ We use Supabase for:
 
 Supabase's privacy policy: https://supabase.com/privacy
 
-### Meta/Facebook SDK & SKAdNetwork
-We use Meta's SDK and Apple's SKAdNetwork framework to measure the effectiveness of our advertising campaigns. SKAdNetwork is Apple's privacy-preserving attribution system that reports aggregate install data without exposing individual user information. This includes:
+### Meta/Facebook SDK
+We use Meta's SDK to measure the effectiveness of our advertising campaigns and improve user experience. This includes:
 
 #### Data Collected:
 - Installation and registration events
