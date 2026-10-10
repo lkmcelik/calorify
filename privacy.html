@@ -37,7 +37,7 @@
         "name": "Calorify",
         "url": "https://calorify.app"
       },
-      "dateModified": "2026-03-27",
+      "dateModified": "2026-10-10",
       "breadcrumb": {
         "@type": "BreadcrumbList",
         "itemListElement": [
@@ -105,7 +105,7 @@
 
         <main class="legal-content">
             <h1>Privacy Policy for Calorify</h1>
-            <p class="legal-date">Last Updated: March 27, 2026</p>
+            <p class="legal-date">Last Updated: October 10, 2026</p>
 
             <section id="introduction">
                 <h2>Introduction</h2>
@@ -121,7 +121,7 @@
                 <ul>
                     <li><strong>Email address</strong>: Used for account creation and authentication</li>
                     <li><strong>Name</strong>: Used for personalization and display purposes</li>
-                    <li><strong>Profile information</strong>: Age, height, weight, activity level for personalized calorie calculations</li>
+                    <li><strong>Profile information</strong>: Date of birth, sex (optional), height, weight and activity level for personalized calorie calculations</li>
                 </ul>
 
                 <h4>Health and Fitness Data</h4>
@@ -133,8 +133,8 @@
 
                 <h4>User-Generated Content</h4>
                 <ul>
-                    <li><strong>Food photos</strong>: Images of meals for AI-powered nutrition analysis (processed on-device when possible)</li>
-                    <li><strong>Voice recordings</strong>: Temporary audio for voice-to-text meal logging (processed and immediately deleted)</li>
+                    <li><strong>Food photos</strong>: Images of meals, sent to our servers and to OpenAI for AI-powered nutrition analysis</li>
+                    <li><strong>Voice recordings</strong>: Temporary audio for voice-to-text meal logging, transcribed via OpenAI and not stored by us</li>
                     <li><strong>Meal descriptions</strong>: Text entries about your food consumption</li>
                 </ul>
 
@@ -231,6 +231,14 @@
                 </ul>
                 <p>Supabase's privacy policy: <a href="https://supabase.com/privacy" target="_blank">https://supabase.com/privacy</a></p>
 
+                <h3>OpenAI</h3>
+                <p>Food photos, meal descriptions and voice recordings you choose to analyze are sent from our servers to OpenAI to estimate foods and nutrition values. OpenAI processes this content to return the result to you; under its API terms it is not used to train OpenAI's models.</p>
+                <p>OpenAI's privacy policy: <a href="https://openai.com/policies/privacy-policy" target="_blank">https://openai.com/policies/privacy-policy</a></p>
+
+                <h3>Resend</h3>
+                <p>We use Resend to send transactional emails such as password reset and verification codes. Resend receives your email address and the content of these emails.</p>
+                <p>Resend's privacy policy: <a href="https://resend.com/legal/privacy-policy" target="_blank">https://resend.com/legal/privacy-policy</a></p>
+
                 <h3>Meta/Facebook SDK &amp; SKAdNetwork</h3>
                 <p>We use Meta's SDK and Apple's SKAdNetwork framework to measure the effectiveness of our advertising campaigns. SKAdNetwork is Apple's privacy-preserving attribution system that reports aggregate install data without exposing individual user information. This includes:</p>
 
@@ -300,13 +308,15 @@
                     <li><strong>Active Accounts</strong>: Data retained while account is active</li>
                     <li><strong>Deleted Accounts</strong>: Data deleted within 30 days of account deletion</li>
                     <li><strong>Backups</strong>: Backup data deleted within 90 days</li>
+                    <li><strong>Free trial abuse prevention</strong>: When a free scan trial is granted, we keep a one-way keyed hash of your sign-in identity (your Apple or Google account identifier, or your verified email address) and the date. It is kept after account deletion, only to prevent the same identity from receiving another free trial, and cannot be used to recover your identity or contact you.</li>
+                    <li><strong>Verification email logs</strong>: Records of verification emails sent (with a hashed IP address and no link to your account) are deleted after 30 days</li>
                     <li><strong>Legal Holds</strong>: Data may be retained longer if legally required</li>
                 </ul>
             </section>
 
             <section id="children">
                 <h2>Children's Privacy</h2>
-                <p>Calorify is not intended for children under 4. We do not knowingly collect data from children under 4. If you believe we have collected data from a child, please contact us immediately.</p>
+                <p>Calorify is not intended for children under 13. We do not knowingly collect data from children under 13. If you believe we have collected data from a child, please contact us immediately.</p>
             </section>
 
             <section id="international">
