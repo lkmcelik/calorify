@@ -234,8 +234,8 @@ The App may be subject to export laws and regulations. You agree not to export o
 
 For questions about these Terms:
 
-**Email**: support@calorify.app
-**Legal Inquiries**: legal@calorify.app
+**Email**: lkmcelik@hotmail.com
+**Legal Inquiries**: lkmcelik@hotmail.com
 **Address**: [Your Company Address]
 
 ## 19. Features and Functionality

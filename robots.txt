@@ -3,7 +3,7 @@
 
 User-agent: *
 Allow: /
-Sitemap: https://calorify.app/sitemap.xml
+Sitemap: https://lkmcelik.github.io/calorify/sitemap.xml
 
 # AI Crawler Permissions (AEO Optimization)
 User-agent: GPTBot

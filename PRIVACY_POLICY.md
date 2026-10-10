@@ -181,9 +181,9 @@ We may update this Privacy Policy periodically. We will notify you of any materi
 
 For privacy-related questions or concerns:
 
-**Email**: privacy@calorify.app
+**Email**: lkmcelik@hotmail.com
 **Address**: [Your Company Address]
-**Data Protection Officer**: dpo@calorify.app
+**Data Protection Officer**: lkmcelik@hotmail.com
 
 ## Legal Basis for Processing (GDPR)
 
