@@ -1,6 +1,6 @@
 # Privacy Policy for Calorify
 
-Last Updated: March 27, 2026
+Last Updated: October 16, 2026
 
 ## Introduction
 
@@ -11,28 +11,33 @@ Calorify ("we," "our," or "us") is committed to protecting your privacy. This Pr
 ### Information You Provide to Us
 
 #### Account Information
+
 - **Email address**: Used for account creation and authentication
 - **Name**: Used for personalization and display purposes
-- **Profile information**: Age, height, weight, activity level for personalized calorie calculations
+- **Profile information**: Date of birth, sex (optional), height, weight and activity level for personalized calorie calculations
 
 #### Health and Fitness Data
+
 - **Nutrition data**: Food logs, calorie intake, macronutrient information
 - **Health metrics**: Weight changes, BMI calculations (with your explicit consent via HealthKit)
 - **Fitness data**: Activity levels, calorie burn estimates (with your explicit consent via HealthKit)
 
 #### User-Generated Content
-- **Food photos**: Images of meals for AI-powered nutrition analysis (processed on-device when possible)
-- **Voice recordings**: Temporary audio for voice-to-text meal logging (processed and immediately deleted)
+
+- **Food photos**: Images of meals, sent to our servers and to OpenAI for AI-powered nutrition analysis
+- **Voice recordings**: Temporary audio for voice-to-text meal logging, transcribed via OpenAI and not stored by us
 - **Meal descriptions**: Text entries about your food consumption
 
 ### Information Collected Automatically
 
 #### Usage Data
+
 - **App interactions**: Features used, buttons clicked, screens viewed
 - **Session information**: App launch times, usage duration
 - **Performance data**: Crash reports, error logs (anonymized)
 
 #### Device Information
+
 - **Device type**: iPhone/iPad model for app optimization
 - **Operating system**: iOS version for compatibility
 - **App version**: For support and update purposes
@@ -40,24 +45,28 @@ Calorify ("we," "our," or "us") is committed to protecting your privacy. This Pr
 ## How We Use Your Information
 
 ### Primary Purposes
-1. **Provide Core Functionality**: Calculate calories, track nutrition, analyze food
-2. **Personalization**: Customize calorie goals, meal recommendations
-3. **Account Management**: Authentication, profile management, data sync
-4. **Health Insights**: Generate nutrition reports, track progress
+
+- **Provide Core Functionality**: Calculate calories, track nutrition, analyze food
+- **Personalization**: Customize calorie goals, meal recommendations
+- **Account Management**: Authentication, profile management, data sync
+- **Health Insights**: Generate nutrition reports, track progress
 
 ### Secondary Purposes
-1. **App Improvement**: Fix bugs, optimize performance, develop new features
-2. **Customer Support**: Respond to inquiries, provide assistance
-3. **Safety and Security**: Detect fraud, enforce terms of service
+
+- **App Improvement**: Fix bugs, optimize performance, develop new features
+- **Customer Support**: Respond to inquiries, provide assistance
+- **Safety and Security**: Detect fraud, enforce terms of service
 
 ## Data Storage and Security
 
 ### Where We Store Data
+
 - **Primary Storage**: Supabase cloud infrastructure (encrypted at rest)
 - **Local Storage**: iOS Keychain for sensitive authentication tokens
 - **Temporary Storage**: Device cache for offline functionality
 
 ### Security Measures
+
 - **Encryption**: All data transmitted using TLS 1.3 or higher
 - **Authentication**: Secure token-based authentication via Supabase Auth
 - **Access Controls**: Row-level security policies on all database tables
@@ -66,85 +75,113 @@ Calorify ("we," "our," or "us") is committed to protecting your privacy. This Pr
 ## Data Sharing and Disclosure
 
 ### We DO NOT:
+
 - Sell your personal information
 - Share your health or nutrition data with advertisers
 - Use your health data for marketing
 
 ### Advertising Attribution:
-With your consent (via App Tracking Transparency), we share limited device identifiers and app usage events (such as app install, registration, and subscription) with Meta for advertising measurement purposes. We never share your food logs, health data, or nutrition information with advertisers. See the Third-Party Services section for full details.
+
+With your consent (via App Tracking Transparency), we share limited device identifiers and app events (such as app installs and launches, onboarding steps, in-app purchases and free-trial starts) with Meta for advertising measurement purposes. Purchase and free-trial events are logged automatically by the Meta SDK. We never share your food logs, health data, or nutrition information with advertisers. See the [Third-Party Services](#third-party) section for full details.
 
 ### We MAY Share Data:
-1. **With Your Consent**: When you explicitly authorize sharing
-2. **Service Providers**: Supabase for backend services (under strict data processing agreements)
-3. **Legal Requirements**: If required by law or valid legal process
-4. **Safety**: To protect rights, property, or safety of users
+
+- **With Your Consent**: When you explicitly authorize sharing
+- **Service Providers**: Supabase for backend services (under strict data processing agreements)
+- **Legal Requirements**: If required by law or valid legal process
+- **Safety**: To protect rights, property, or safety of users
 
 ## Third-Party Services
 
 ### Supabase
+
 We use Supabase for:
+
 - Authentication services
 - Database storage
-- Real-time data synchronization
+- Data synchronization across your devices
 
-Supabase's privacy policy: https://supabase.com/privacy
+Supabase's privacy policy: [https://supabase.com/privacy](https://supabase.com/privacy)
+
+### OpenAI
+
+Food photos, meal descriptions and voice recordings you choose to analyze are sent from our servers to OpenAI to estimate foods and nutrition values. When you generate insights in Reports, a summary of your logged days for the selected period (daily averages, meal times, the names of your most-logged foods, water intake and your goals) is sent to OpenAI to write them. This analysis runs only when you use these features. OpenAI processes this content to return the result to you; under its API terms it is not used to train OpenAI's models.
+
+OpenAI's privacy policy: [https://openai.com/policies/privacy-policy](https://openai.com/policies/privacy-policy)
+
+### Resend
+
+We use Resend to send transactional emails such as password reset and verification codes. Resend receives your email address and the content of these emails.
+
+Resend's privacy policy: [https://resend.com/legal/privacy-policy](https://resend.com/legal/privacy-policy)
 
 ### Meta/Facebook SDK & SKAdNetwork
+
 We use Meta's SDK and Apple's SKAdNetwork framework to measure the effectiveness of our advertising campaigns. SKAdNetwork is Apple's privacy-preserving attribution system that reports aggregate install data without exposing individual user information. This includes:
 
 #### Data Collected:
-- Installation and registration events
-- In-app user behavior and interactions
-- Purchase and subscription events
+
+- App installs and launches, logged automatically by the Meta SDK
+- Onboarding progress events (event names only; never your goals or other health data)
+- In-app purchase and free-trial events, logged automatically by the Meta SDK (automatic App Events), including the product and its price
 - Device identifiers (IDFA when authorized via App Tracking Transparency)
 
 #### Purpose:
+
 - Advertising campaign optimization
 - Analytics and performance measurement
 - Fraud prevention
 - Product improvement
 
 #### Data Sharing:
+
 This data is shared with Meta (Facebook, Instagram) for advertising attribution and campaign optimization.
 
 #### User Control:
+
 You can control tracking permissions through:
+
 - iOS Settings → Privacy & Security → Tracking
 - Grant or deny permission when prompted by the app
 
 **More Information:**
-- Meta Privacy Policy: https://www.facebook.com/privacy/policy/
-- Facebook Business Tools: https://www.facebook.com/business/tools
+
+- Meta Privacy Policy: [https://www.facebook.com/privacy/policy/](https://www.facebook.com/privacy/policy/)
+- Facebook Business Tools: [https://www.facebook.com/business/tools](https://www.facebook.com/business/tools)
 
 ### Apple Services
+
 - **HealthKit**: Optional integration for health data (you control what data is shared)
-- **CloudKit**: Optional iCloud backup (if enabled in iOS settings)
 - **StoreKit**: For premium subscription processing (Apple handles payment data)
 
 ## Your Rights and Choices
 
 ### Data Control
+
 - **Access**: View all your data within the app
-- **Export**: Download your data in common formats
+- **Export**: Request a copy of your data by email (see Contact Us)
 - **Deletion**: Delete your account and all associated data
 - **Correction**: Update incorrect information
-- **Portability**: Export data to use with other services
+- **Portability**: Receive your data in a portable format on request
 
 ### Privacy Controls
+
 - **Permission Management**: Control camera, microphone, health data access in iOS Settings
 - **Data Minimization**: Only provide required information
-- **Opt-out**: Disable analytics in app settings
+- **Opt-out of tracking**: Deny or withdraw tracking permission in iOS Settings → Privacy & Security → Tracking
 
 ## Data Retention
 
 - **Active Accounts**: Data retained while account is active
 - **Deleted Accounts**: Data deleted within 30 days of account deletion
 - **Backups**: Backup data deleted within 90 days
+- **Free trial abuse prevention**: When a free scan trial is granted, we keep a one-way keyed hash of your sign-in identity (your Apple or Google account identifier, or your verified email address) and the date. It is kept after account deletion, only to prevent the same identity from receiving another free trial, and cannot be used to recover your identity or contact you.
+- **Verification email logs**: Records of verification emails sent (with a hashed IP address and no link to your account) are deleted after 30 days
 - **Legal Holds**: Data may be retained longer if legally required
 
 ## Children's Privacy
 
-Calorify is not intended for children under 4. We do not knowingly collect data from children under 4. If you believe we have collected data from a child, please contact us immediately.
+Calorify is not intended for children under 13. We do not knowingly collect data from children under 13. If you believe we have collected data from a child, please contact us immediately.
 
 ## International Data Transfers
 
@@ -153,6 +190,7 @@ Your data may be transferred to and processed in countries other than your own. 
 ## California Privacy Rights (CCPA)
 
 California residents have additional rights:
+
 - Right to know what personal information is collected
 - Right to know if personal information is sold or disclosed
 - Right to opt-out of sale (we do not sell personal information)
@@ -161,6 +199,7 @@ California residents have additional rights:
 ## European Privacy Rights (GDPR)
 
 EU residents have additional rights:
+
 - Right to be informed about data processing
 - Right of access to personal data
 - Right to rectification of inaccurate data
@@ -173,6 +212,7 @@ EU residents have additional rights:
 ## Changes to This Policy
 
 We may update this Privacy Policy periodically. We will notify you of any material changes via:
+
 - In-app notifications
 - Email to your registered address
 - Update notice on first app launch
@@ -182,45 +222,25 @@ We may update this Privacy Policy periodically. We will notify you of any materi
 For privacy-related questions or concerns:
 
 **Email**: lkmcelik@hotmail.com
-**Address**: [Your Company Address]
-**Data Protection Officer**: lkmcelik@hotmail.com
 
 ## Legal Basis for Processing (GDPR)
 
 We process your data based on:
-1. **Consent**: For health data and optional features
-2. **Contract**: To provide services you've requested
-3. **Legitimate Interests**: For app improvement and security
-4. **Legal Obligation**: When required by law
 
-## Data Processing Agreements
-
-All third-party processors sign data processing agreements ensuring:
-- Data is processed only on our instructions
-- Confidentiality is maintained
-- Appropriate security measures are implemented
-- Sub-processors are properly vetted
-- Data is returned or deleted after processing
+- **Consent**: For health data and optional features
+- **Contract**: To provide services you've requested
+- **Legitimate Interests**: For app improvement and security
+- **Legal Obligation**: When required by law
 
 ## Privacy by Design
 
 Calorify implements privacy by design principles:
+
 - **Data Minimization**: Collect only necessary data
 - **Purpose Limitation**: Use data only for stated purposes
 - **Default Privacy**: Privacy-protective defaults
 - **Transparency**: Clear information about data practices
 - **User Control**: Easy-to-use privacy controls
 - **Security First**: Built-in security measures
-
-## Compliance Certifications
-
-We maintain compliance with:
-- Apple App Store Guidelines
-- iOS App Tracking Transparency (ATT)
-- General Data Protection Regulation (GDPR)
-- California Consumer Privacy Act (CCPA)
-- Health Insurance Portability and Accountability Act (HIPAA) - where applicable
-
----
 
 This privacy policy is effective as of the date listed above and will remain in effect except with respect to any changes in its provisions in the future, which will be in effect immediately after being posted on this page.

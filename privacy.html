@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Privacy Policy - Calorify | Data Protection & User Privacy</title>
     <meta name="description" content="Calorify Privacy Policy. Learn how we protect your personal data, nutrition tracking information, and health data. GDPR compliant. Your privacy is our priority.">
     <link rel="canonical" href="https://lkmcelik.github.io/calorify/privacy.html">
@@ -37,7 +37,7 @@
         "name": "Calorify",
         "url": "https://lkmcelik.github.io/calorify/"
       },
-      "dateModified": "2026-10-10",
+      "dateModified": "2026-10-16",
       "breadcrumb": {
         "@type": "BreadcrumbList",
         "itemListElement": [
@@ -58,33 +58,32 @@
     }
     </script>
 
+    <meta name="color-scheme" content="dark">
+    <meta name="theme-color" content="#070B12">
+    <link rel="icon" type="image/png" sizes="64x64" href="img/icon-64.png">
+    <link rel="apple-touch-icon" href="img/icon-180.png">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <nav class="navbar">
-        <div class="nav-container">
-            <div class="nav-brand">
-                <a href="index.html">
-                    <img src="AppIcon.png" alt="Calorify Logo" class="logo">
-                    <span>Calorify</span>
-                </a>
-            </div>
-            <button class="nav-toggle" aria-label="Toggle navigation">
-                <span></span>
-                <span></span>
-                <span></span>
-            </button>
-            <div class="nav-menu">
-                <a href="index.html" class="nav-link">Home</a>
-                <a href="privacy.html" class="nav-link active">Privacy</a>
-                <a href="terms.html" class="nav-link">Terms</a>
-            </div>
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <header class="site-nav">
+        <div class="nav-inner">
+            <a class="brand" href="index.html">
+                <img src="img/icon-64.png" alt="" width="32" height="32">
+                <span>Calorify</span>
+            </a>
+            <nav class="nav-links nav-links--legal" aria-label="Help and legal">
+                <a href="support/">Support</a>
+                <a href="privacy.html" aria-current="page">Privacy</a>
+                <a href="terms.html">Terms</a>
+            </nav>
         </div>
-    </nav>
+    </header>
 
     <div class="legal-container">
         <aside class="toc-sidebar">
-            <h3>Table of Contents</h3>
+            <h2>Contents</h2>
             <ul class="toc-list">
                 <li><a href="#introduction">Introduction</a></li>
                 <li><a href="#information-collect">Information We Collect</a></li>
@@ -103,9 +102,9 @@
             </ul>
         </aside>
 
-        <main class="legal-content">
+        <main class="legal-content" id="main">
             <h1>Privacy Policy for Calorify</h1>
-            <p class="legal-date">Last Updated: October 10, 2026</p>
+            <p class="legal-date">Last Updated: October 16, 2026</p>
 
             <section id="introduction">
                 <h2>Introduction</h2>
@@ -207,7 +206,7 @@
 
                 <div class="highlight-box">
                     <h3>Advertising Attribution:</h3>
-                    <p>With your consent (via App Tracking Transparency), we share limited device identifiers and app usage events (such as app install, registration, and subscription) with Meta for advertising measurement purposes. We never share your food logs, health data, or nutrition information with advertisers. See the <a href="#third-party">Third-Party Services</a> section for full details.</p>
+                    <p>With your consent (via App Tracking Transparency), we share limited device identifiers and app events (such as app installs and launches, onboarding steps, in-app purchases and free-trial starts) with Meta for advertising measurement purposes. Purchase and free-trial events are logged automatically by the Meta SDK. We never share your food logs, health data, or nutrition information with advertisers. See the <a href="#third-party">Third-Party Services</a> section for full details.</p>
                 </div>
 
                 <h3>We MAY Share Data:</h3>
@@ -227,12 +226,12 @@
                 <ul>
                     <li>Authentication services</li>
                     <li>Database storage</li>
-                    <li>Real-time data synchronization</li>
+                    <li>Data synchronization across your devices</li>
                 </ul>
                 <p>Supabase's privacy policy: <a href="https://supabase.com/privacy" target="_blank">https://supabase.com/privacy</a></p>
 
                 <h3>OpenAI</h3>
-                <p>Food photos, meal descriptions and voice recordings you choose to analyze are sent from our servers to OpenAI to estimate foods and nutrition values. OpenAI processes this content to return the result to you; under its API terms it is not used to train OpenAI's models.</p>
+                <p>Food photos, meal descriptions and voice recordings you choose to analyze are sent from our servers to OpenAI to estimate foods and nutrition values. When you generate insights in Reports, a summary of your logged days for the selected period (daily averages, meal times, the names of your most-logged foods, water intake and your goals) is sent to OpenAI to write them. This analysis runs only when you use these features. OpenAI processes this content to return the result to you; under its API terms it is not used to train OpenAI's models.</p>
                 <p>OpenAI's privacy policy: <a href="https://openai.com/policies/privacy-policy" target="_blank">https://openai.com/policies/privacy-policy</a></p>
 
                 <h3>Resend</h3>
@@ -244,9 +243,9 @@
 
                 <h4>Data Collected:</h4>
                 <ul>
-                    <li>Installation and registration events</li>
-                    <li>In-app user behavior and interactions</li>
-                    <li>Purchase and subscription events</li>
+                    <li>App installs and launches, logged automatically by the Meta SDK</li>
+                    <li>Onboarding progress events (event names only; never your goals or other health data)</li>
+                    <li>In-app purchase and free-trial events, logged automatically by the Meta SDK (automatic App Events), including the product and its price</li>
                     <li>Device identifiers (IDFA when authorized via App Tracking Transparency)</li>
                 </ul>
 
@@ -277,7 +276,6 @@
                 <h3>Apple Services</h3>
                 <ul>
                     <li><strong>HealthKit</strong>: Optional integration for health data (you control what data is shared)</li>
-                    <li><strong>CloudKit</strong>: Optional iCloud backup (if enabled in iOS settings)</li>
                     <li><strong>StoreKit</strong>: For premium subscription processing (Apple handles payment data)</li>
                 </ul>
             </section>
@@ -288,17 +286,17 @@
                 <h3>Data Control</h3>
                 <ul>
                     <li><strong>Access</strong>: View all your data within the app</li>
-                    <li><strong>Export</strong>: Download your data in common formats</li>
+                    <li><strong>Export</strong>: Request a copy of your data by email (see Contact Us)</li>
                     <li><strong>Deletion</strong>: Delete your account and all associated data</li>
                     <li><strong>Correction</strong>: Update incorrect information</li>
-                    <li><strong>Portability</strong>: Export data to use with other services</li>
+                    <li><strong>Portability</strong>: Receive your data in a portable format on request</li>
                 </ul>
 
                 <h3>Privacy Controls</h3>
                 <ul>
                     <li><strong>Permission Management</strong>: Control camera, microphone, health data access in iOS Settings</li>
                     <li><strong>Data Minimization</strong>: Only provide required information</li>
-                    <li><strong>Opt-out</strong>: Disable analytics in app settings</li>
+                    <li><strong>Opt-out of tracking</strong>: Deny or withdraw tracking permission in iOS Settings → Privacy &amp; Security → Tracking</li>
                 </ul>
             </section>
 
@@ -396,26 +394,25 @@
         </main>
     </div>
 
-    <footer class="footer">
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-brand">
-                    <img src="AppIcon.png" alt="Calorify Logo" class="logo">
-                    <span>Calorify</span>
-                </div>
-                <div class="footer-links">
-                    <a href="index.html">Home</a>
-                    <a href="privacy.html">Privacy Policy</a>
-                    <a href="terms.html">Terms of Service</a>
-                    <a href="mailto:lkmcelik@hotmail.com">Contact</a>
-                </div>
+    <footer class="site-footer">
+        <div class="footer-inner">
+            <div class="footer-brand">
+                <img src="img/icon-64.png" alt="" width="28" height="28">
+                <span>Calorify</span>
             </div>
-            <div class="footer-bottom">
-                <p>&copy; 2025 Calorify. All rights reserved.</p>
+            <nav class="footer-links" aria-label="Site">
+                <a href="index.html">Home</a>
+                <a href="support/">Support</a>
+                <a href="privacy.html">Privacy Policy</a>
+                <a href="terms.html">Terms of Service</a>
+                <a href="mailto:lkmcelik@hotmail.com">Contact</a>
+            </nav>
+            <div class="footer-fine">
+                <p>&copy; 2026 Calorify</p>
             </div>
         </div>
     </footer>
 
-    <script src="script.js"></script>
+    <script src="script.js" defer></script>
 </body>
 </html>

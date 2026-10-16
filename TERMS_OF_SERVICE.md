@@ -1,6 +1,6 @@
 # Terms of Service for Calorify
 
-Last Updated: January 2025
+Last Updated: October 16, 2026
 
 ## 1. Agreement to Terms
 
@@ -11,14 +11,14 @@ By downloading, installing, or using Calorify ("the App"), you agree to be bound
 Calorify is a nutrition tracking and health management application that provides:
 - Calorie and macronutrient tracking
 - AI-powered food recognition
-- Meal planning and recommendations
+- Personalized calorie and macronutrient goals
 - Health metrics monitoring
 - Integration with Apple HealthKit
 
 ## 3. Account Registration
 
 ### Requirements
-- You must be at least9years old to use Calorify
+- You must be at least 13 years old to use Calorify
 - You must provide accurate and complete information
 - You are responsible for maintaining account security
 - One person per account (no account sharing)
@@ -59,14 +59,15 @@ Calorify is a nutrition tracking and health management application that provides
 ### Specific Health Warnings
 - If you have an eating disorder, consult your healthcare provider before using
 - Pregnant or nursing women should consult doctors for nutrition advice
-- Children under9should not use the App
+- Children under 13 should not use the App
 - Those with medical conditions should seek professional guidance
 
 ## 6. Premium Subscription
 
 ### Subscription Options
-- **Monthly**: $4.99/month (includes 3-days free trial)
-- **Annual**: $49.99/year (includes 1-week free trial)
+- **Monthly**: an auto-renewing monthly subscription
+- **Annual**: an auto-renewing yearly subscription
+- The price for your country or region is shown in the App and on the App Store before you subscribe
 
 ### Billing
 - Subscription automatically renews unless canceled
@@ -78,9 +79,11 @@ Calorify is a nutrition tracking and health management application that provides
 - Cancel anytime through iOS Settings
 - No refunds for partial subscription periods
 - Access continues until end of current billing period
+- Deleting your Calorify account does not cancel an App Store subscription; cancel it under Subscriptions in your Apple Account settings
 
 ### Free Trial
-- 1-week free trial for annual subscription
+- Where offered, eligible new subscribers get a free trial: 3 days on the monthly plan, 7 days on the annual plan
+- The App shows whether a free trial applies to you before you subscribe
 - Automatically converts to paid subscription unless canceled
 - Cancel before trial ends to avoid charges
 
@@ -173,7 +176,7 @@ We may terminate or suspend access immediately if you:
 ## 13. Governing Law and Disputes
 
 ### Governing Law
-These Terms are governed by the laws of [Your Jurisdiction], without regard to conflict of law principles.
+These Terms are governed by applicable laws, without regard to conflict of law principles.
 
 ### Dispute Resolution
 1. **Informal Resolution**: Contact us first to resolve disputes informally
@@ -222,7 +225,7 @@ We'll provide notices through the App, email, or other reasonable means.
 
 ## 16. Special Provisions for Minors
 
-- Users aged 4-17 need parental consent
+- Users aged 13-17 need parental consent
 - Parents are responsible for minor's use
 - We may terminate accounts if age misrepresented
 
@@ -235,20 +238,18 @@ The App may be subject to export laws and regulations. You agree not to export o
 For questions about these Terms:
 
 **Email**: lkmcelik@hotmail.com
-**Legal Inquiries**: lkmcelik@hotmail.com
-**Address**: [Your Company Address]
 
 ## 19. Features and Functionality
 
 ### Current Features
-- Food logging and tracking
-- Barcode scanning
+- Food logging by photo, voice, search and manual entry
 - Photo-based food recognition
 - Voice input for meal logging
-- Nutrition reports and analytics
+- Nutrition reports and AI insights
 - Water intake tracking
-- Weight tracking
-- Meal planning suggestions
+- Streaks and achievements
+- Water and meal reminders
+- Home Screen and Lock Screen widgets
 
 ### Beta Features
 Some features may be in beta. Beta features are provided as-is without warranties.

@@ -1,499 +1,541 @@
 <!DOCTYPE html>
-<html lang="en" itemscope itemtype="https://schema.org/WebPage">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Calorify - AI Calorie Counter & Nutrition Tracker App for iOS</title>
-    <meta name="description" content="Track calories instantly with AI food recognition. Scan meals, monitor macros & nutrients, achieve health goals. Free iOS nutrition tracking app with barcode scanner.">
-    <meta name="application-name" content="Calorify">
-    <meta itemprop="name" content="Calorify: AI Calorie Counter">
-    <meta itemprop="description" content="AI-powered calorie counter and nutrition tracker app for iOS">
-    <meta itemprop="image" content="https://lkmcelik.github.io/calorify/AppIcon.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Calorify: AI calorie counter and macro tracker for iPhone and iPad</title>
+    <meta name="description" content="Snap a meal and Calorify estimates calories, protein, carbs and fat for every item. Log by voice or search, track water, and see your week in reports.">
     <link rel="canonical" href="https://lkmcelik.github.io/calorify/">
+    <meta name="robots" content="index, follow, max-image-preview:large">
+    <meta name="color-scheme" content="dark">
+    <meta name="theme-color" content="#070B12">
+    <meta name="apple-itunes-app" content="app-id=6749366793">
 
-    <!-- Open Graph Meta Tags -->
-    <meta property="og:title" content="Calorify - AI-Powered Calorie Counter & Nutrition Tracker">
-    <meta property="og:description" content="Track calories instantly with AI food recognition. Scan meals, monitor macros, achieve your health goals with the smartest iOS nutrition app.">
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://lkmcelik.github.io/calorify/">
-    <meta property="og:image" content="https://lkmcelik.github.io/calorify/AppIcon.png">
     <meta property="og:site_name" content="Calorify">
     <meta property="og:locale" content="en_US">
+    <meta property="og:url" content="https://lkmcelik.github.io/calorify/">
+    <meta property="og:title" content="Calorify: your day, one ring">
+    <meta property="og:description" content="AI calorie counter for iPhone and iPad. Snap a meal for calories and macros on every item, log by voice or search, and see what's left in one ring.">
+    <meta property="og:image" content="https://lkmcelik.github.io/calorify/img/og-image.jpg">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:image:alt" content="Calorify's Journal screen on an iPhone inside a teal-to-green ring, with the words: Your day, one ring.">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Calorify: your day, one ring">
+    <meta name="twitter:description" content="AI calorie counter for iPhone and iPad. Snap a meal for calories and macros on every item, log by voice or search, and see what's left in one ring.">
+    <meta name="twitter:image" content="https://lkmcelik.github.io/calorify/img/og-image.jpg">
+    <meta name="twitter:image:alt" content="Calorify's Journal screen on an iPhone inside a teal-to-green ring, with the words: Your day, one ring.">
 
-    <!-- Additional Meta Tags -->
-    <meta name="author" content="Calorify">
-    <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
-    <meta name="googlebot" content="index, follow">
+    <link rel="icon" type="image/png" sizes="64x64" href="img/icon-64.png">
+    <link rel="apple-touch-icon" href="img/icon-180.png">
+    <link rel="preload" as="image" href="img/journal-today.webp" type="image/webp">
+    <link rel="stylesheet" href="style.css">
+    <script>document.documentElement.classList.add('js');</script>
 
-    <!-- AEO Optimization for AI Crawlers -->
-    <meta name="bingbot" content="index, follow">
-    <meta name="GPTBot" content="index, follow">
-    <meta name="ClaudeBot" content="index, follow">
-    <meta name="PerplexityBot" content="index, follow">
-    <meta name="ChatGPT-User" content="index, follow">
-
-    <!-- Enhanced Content Description for AI Understanding -->
-    <meta name="subject" content="AI-powered calorie counting and nutrition tracking">
-    <meta name="topic" content="Health, Fitness, Nutrition, Weight Loss, Calorie Counter">
-    <meta name="summary" content="Calorify uses AI to instantly recognize food from photos and track calories. Alternative to MyFitnessPal at 75% less cost.">
-    <meta name="classification" content="Health & Fitness Application">
-    <meta name="category" content="iOS Health App">
-
-    <!-- Mobile App Meta Tags -->
-    <meta name="apple-mobile-web-app-capable" content="yes">
-    <meta name="apple-mobile-web-app-status-bar-style" content="default">
-    <meta name="apple-mobile-web-app-title" content="Calorify">
-    <link rel="apple-touch-icon" href="AppIcon.png">
-
-    <!-- Performance Optimization -->
-    <link rel="dns-prefetch" href="https://apps.apple.com">
-    <link rel="preconnect" href="https://apps.apple.com">
-    <link rel="preload" href="style.css" as="style">
-    <link rel="preload" href="AppIcon.png" as="image">
-    <meta http-equiv="x-dns-prefetch-control" content="on">
-
-    <!-- Mobile Optimization -->
-    <meta name="theme-color" content="#4A90E2">
-    <meta name="mobile-web-app-capable" content="yes">
-    <meta name="format-detection" content="telephone=no">
-    <meta name="HandheldFriendly" content="true">
-    <meta name="MobileOptimized" content="320">
-
-    <!-- Web App Manifest -->
-    <link rel="manifest" href="/manifest.json">
-
-    <!-- Schema.org Structured Data -->
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
-      "@type": "MobileApplication",
-      "name": "Calorify",
-      "description": "AI-powered calorie counter and nutrition tracker app for iOS. Track calories, macros, and nutrients with food recognition technology.",
-      "operatingSystem": "iOS",
-      "applicationCategory": "HealthApplication",
-      "offers": {
-        "@type": "Offer",
-        "price": "0",
-        "priceCurrency": "USD"
-      },
-      "aggregateRating": {
-        "@type": "AggregateRating",
-        "ratingValue": "4.8",
-        "ratingCount": "2500"
-      },
-      "author": {
-        "@type": "Organization",
-        "name": "Calorify",
-        "url": "https://lkmcelik.github.io/calorify/"
-      },
-      "screenshot": [
-        "https://lkmcelik.github.io/calorify/img/1.png",
-        "https://lkmcelik.github.io/calorify/img/2.png",
-        "https://lkmcelik.github.io/calorify/img/3.png"
-      ],
-      "featureList": [
-        "AI-powered food recognition",
-        "Barcode scanner",
-        "Macro tracking",
-        "Nutrient analysis",
-        "Goal setting",
-        "Progress tracking",
-        "Food database",
-        "Meal planning"
-      ],
-      "url": "https://apps.apple.com/tr/app/calorify-ai-calorie-counter/id6749366793",
-      "downloadUrl": "https://apps.apple.com/tr/app/calorify-ai-calorie-counter/id6749366793",
-      "installUrl": "https://apps.apple.com/tr/app/calorify-ai-calorie-counter/id6749366793"
-    }
-    </script>
-
-    <!-- FAQ Schema -->
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "FAQPage",
-      "mainEntity": [
+      "@graph": [
         {
-          "@type": "Question",
-          "name": "How does Calorify track calories?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Calorify uses advanced AI technology to recognize food from photos, scan barcodes, and access a comprehensive food database to accurately track calories and nutrients."
-          }
+          "@type": "WebSite",
+          "@id": "https://lkmcelik.github.io/calorify/#website",
+          "name": "Calorify",
+          "url": "https://lkmcelik.github.io/calorify/",
+          "inLanguage": "en",
+          "publisher": { "@id": "https://lkmcelik.github.io/calorify/#publisher" }
         },
         {
-          "@type": "Question",
-          "name": "Is Calorify free to use?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Yes, Calorify offers a free version with core features. Premium features are available through optional subscription."
-          }
+          "@type": "Organization",
+          "@id": "https://lkmcelik.github.io/calorify/#publisher",
+          "name": "Calorify",
+          "url": "https://lkmcelik.github.io/calorify/",
+          "logo": "https://lkmcelik.github.io/calorify/img/icon-180.png",
+          "email": "lkmcelik@hotmail.com"
         },
         {
-          "@type": "Question",
-          "name": "Can Calorify track macronutrients?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Yes, Calorify tracks all macronutrients including proteins, carbohydrates, and fats, plus micronutrients like vitamins and minerals."
-          }
-        }
-      ]
-    }
-    </script>
-
-    <!-- HowTo Schema for AI Optimization -->
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "HowTo",
-      "name": "How to Track Calories with Calorify AI App",
-      "description": "Learn how to use Calorify's AI-powered features to track calories, scan food with your camera, and monitor your nutrition goals",
-      "image": "https://lkmcelik.github.io/calorify/AppIcon.png",
-      "totalTime": "PT2M",
-      "supply": [
-        {
-          "@type": "HowToSupply",
-          "name": "iPhone or iPad with Calorify app installed"
-        }
-      ],
-      "step": [
-        {
-          "@type": "HowToStep",
-          "name": "Download and Install Calorify",
-          "text": "Download Calorify from the App Store. It's free with optional premium features.",
-          "url": "https://lkmcelik.github.io/calorify/#download",
-          "image": "https://lkmcelik.github.io/calorify/img/1.png"
-        },
-        {
-          "@type": "HowToStep",
-          "name": "Set Up Your Profile",
-          "text": "Enter your age, weight, height, and fitness goals. Calorify will calculate your daily calorie budget.",
-          "url": "https://lkmcelik.github.io/calorify/#setup",
-          "image": "https://lkmcelik.github.io/calorify/img/1.png"
-        },
-        {
-          "@type": "HowToStep",
-          "name": "Track Food with AI Camera",
-          "text": "Take a photo of any meal. The AI instantly recognizes the food and calculates calories and nutrients.",
-          "url": "https://lkmcelik.github.io/calorify/#ai-tracking",
-          "image": "https://lkmcelik.github.io/calorify/img/2.png"
-        },
-        {
-          "@type": "HowToStep",
-          "name": "Use Voice Commands",
-          "text": "Tap the microphone and say what you ate. For example: 'I had grilled chicken with rice for lunch.'",
-          "url": "https://lkmcelik.github.io/calorify/#voice",
-          "image": "https://lkmcelik.github.io/calorify/img/2.png"
-        },
-        {
-          "@type": "HowToStep",
-          "name": "Track Water Intake",
-          "text": "Use quick-add buttons to log your water consumption throughout the day.",
-          "url": "https://lkmcelik.github.io/calorify/#water",
-          "image": "https://lkmcelik.github.io/calorify/img/3.png"
-        },
-        {
-          "@type": "HowToStep",
-          "name": "Review Your Progress",
-          "text": "Check daily, weekly, and monthly reports to see your nutrition trends and progress toward goals.",
-          "url": "https://lkmcelik.github.io/calorify/#progress",
-          "image": "https://lkmcelik.github.io/calorify/img/3.png"
-        }
-      ]
-    }
-    </script>
-
-    <!-- WebSite Schema with SearchAction -->
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "WebSite",
-      "name": "Calorify",
-      "description": "AI-powered calorie counter and nutrition tracker app for iOS",
-      "url": "https://lkmcelik.github.io/calorify/",
-      "publisher": {
-        "@type": "Organization",
-        "name": "Calorify",
-        "logo": {
-          "@type": "ImageObject",
-          "url": "https://lkmcelik.github.io/calorify/AppIcon.png"
-        }
-      }
-    }
-    </script>
-
-    <!-- SoftwareApplication Schema for Better App Discovery -->
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "SoftwareApplication",
-      "name": "Calorify: AI Calorie Counter",
-      "applicationCategory": "HealthApplication",
-      "operatingSystem": "iOS 15.0 or later",
-      "offers": {
-        "@type": "Offer",
-        "price": "0",
-        "priceCurrency": "USD",
-        "priceValidUntil": "2025-12-31",
-        "availability": "https://schema.org/InStock"
-      },
-      "aggregateRating": {
-        "@type": "AggregateRating",
-        "ratingValue": "4.8",
-        "ratingCount": "2500",
-        "bestRating": "5",
-        "worstRating": "1"
-      },
-      "softwareVersion": "1.0",
-      "softwareRequirements": "iOS 15.0+, iPhone 6s or later",
-      "permissions": "camera, healthkit, notifications",
-      "inLanguage": ["en", "es", "fr", "de", "it", "ja", "ko", "ar", "pt", "ru", "nl", "hi", "pl", "tr"],
-      "isAccessibleForFree": true,
-      "hasPart": [
-        {
-          "@type": "SoftwareApplication",
-          "name": "Premium Features",
+          "@type": "MobileApplication",
+          "@id": "https://lkmcelik.github.io/calorify/#app",
+          "name": "Calorify",
+          "description": "AI calorie counter and macro tracker for iPhone and iPad. Snap a meal and Calorify estimates calories, protein, carbs and fat for every item; log by voice, search or manual entry; track water, streaks and achievements; see reports for a week, month, 3 months or a year; and get AI insights with one-tap water and meal reminders.",
+          "operatingSystem": "iOS 17.6 or later, iPadOS 17.6 or later",
+          "applicationCategory": "HealthApplication",
+          "inLanguage": ["en", "tr", "de", "es", "fr", "it", "pt", "nl", "pl", "ru", "ja", "ko", "zh-Hans", "ar", "hi"],
+          "url": "https://apps.apple.com/app/id6749366793",
+          "downloadUrl": "https://apps.apple.com/app/id6749366793",
+          "installUrl": "https://apps.apple.com/app/id6749366793",
+          "image": "https://lkmcelik.github.io/calorify/img/icon-180.png",
+          "screenshot": [
+            "https://lkmcelik.github.io/calorify/img/journal-today.webp",
+            "https://lkmcelik.github.io/calorify/img/scan-result.webp",
+            "https://lkmcelik.github.io/calorify/img/voice.webp",
+            "https://lkmcelik.github.io/calorify/img/reports-overview.webp",
+            "https://lkmcelik.github.io/calorify/img/insights.webp",
+            "https://lkmcelik.github.io/calorify/img/widgets.webp"
+          ],
+          "featureList": [
+            "AI photo scan with calories, protein, carbs and fat for each item",
+            "Edit the name and portion of every scanned item",
+            "Voice logging",
+            "Food search with favorites and recent foods",
+            "Manual entry",
+            "Daily calorie ring with protein, carbs and fat targets",
+            "Water tracking",
+            "Logging streaks and achievements",
+            "Reports for a week, month, 3 months or a year",
+            "AI insights with one-tap water and meal reminders",
+            "Home Screen and Lock Screen widgets",
+            "Optional Apple Health connection",
+            "Light and dark appearance",
+            "15 languages"
+          ],
+          "isAccessibleForFree": true,
           "offers": {
             "@type": "Offer",
-            "price": "6.99",
+            "price": "0",
             "priceCurrency": "USD",
-            "priceSpecification": {
-              "@type": "UnitPriceSpecification",
-              "price": "6.99",
-              "priceCurrency": "USD",
-              "referenceQuantity": {
-                "@type": "QuantitativeValue",
-                "value": "1",
-                "unitCode": "MON"
+            "category": "free",
+            "description": "Free to download. Offers in-app purchases: Calorify Premium, an optional auto-renewing subscription."
+          },
+          "publisher": { "@id": "https://lkmcelik.github.io/calorify/#publisher" }
+        },
+        {
+          "@type": "FAQPage",
+          "@id": "https://lkmcelik.github.io/calorify/#faq",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "How does Calorify count calories?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Take a photo and Calorify's AI estimates the portion, calories, protein, carbs and fat of each item on the plate. You can also say what you ate, search for a food or enter it yourself. You can check and edit every item before it's added to your day."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Is Calorify free?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Calorify is free to download. The journal, food search, manual entry, reports and water tracking are free, and the free plan includes a 3-day trial of photo scans. Unlimited photo scans, voice logging and AI insights come with Calorify Premium, an auto-renewing monthly or yearly subscription. The app shows the price in your currency before you subscribe."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "How accurate are the photo estimates?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "They're AI estimates, so treat them as a starting point. Tap any item to fix its name or portion, or remove it, before you add the meal. Calorify is not a medical device and doesn't give medical advice."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Does Calorify work with Apple Health?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Yes, if you want it to. With your permission, Calorify reads your height, weight, date of birth and sex from Apple Health to fill in your profile, and your steps and active energy to show your activity in the journal and reports. Connecting Apple Health is optional."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Which devices and languages does Calorify support?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Calorify runs on iPhone and iPad with iOS or iPadOS 17.6 or later, in light or dark appearance, and in 15 languages: English, Turkish, German, Spanish, French, Italian, Portuguese, Dutch, Polish, Russian, Japanese, Korean, Simplified Chinese, Arabic and Hindi."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "What happens to my food photos and voice recordings?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "When you scan a photo or record a voice entry, it's sent to our servers and to OpenAI to estimate the foods and their nutrition values. We don't store voice recordings. We never sell your personal information or share your food logs with advertisers. The Privacy Policy has the details."
               }
             }
-          }
+          ]
         }
       ]
     }
     </script>
-
-    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <nav class="navbar">
-        <div class="nav-container">
-            <div class="nav-brand">
-                <img src="AppIcon.png" alt="Calorify Logo" class="logo">
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <header class="site-nav">
+        <div class="nav-inner">
+            <a class="brand" href="#top">
+                <img src="img/icon-64.png" alt="" width="32" height="32">
+                <span>Calorify</span>
+            </a>
+            <nav class="nav-links" aria-label="Sections">
+                <a href="#log">Features</a>
+                <a href="#premium">Free and Premium</a>
+                <a href="#faq">FAQ</a>
+            </nav>
+            <a class="nav-get" href="https://apps.apple.com/app/id6749366793" rel="noopener">Download<span class="visually-hidden"> Calorify on the App Store</span></a>
+        </div>
+    </header>
+
+    <main id="main">
+        <section class="hero" id="top" aria-labelledby="hero-title">
+            <div class="hero-copy">
+                <p class="eyebrow">AI calorie counter for iPhone and iPad</p>
+                <h1 id="hero-title" class="display">Your day, one&nbsp;ring<svg class="ring-stop" viewBox="0 0 40 40" aria-hidden="true" focusable="false"><defs><linearGradient id="ring-gradient-stop" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#00CCB3"/><stop offset="1" stop-color="#66E666"/></linearGradient></defs><circle cx="20" cy="20" r="14" class="ring-stop-track"/><circle cx="20" cy="20" r="14" class="ring-stop-arc" pathLength="100" transform="rotate(-90 20 20)" stroke="url(#ring-gradient-stop)"/></svg></h1>
+                <p class="lede">Snap a meal and Calorify estimates calories, protein, carbs and fat for every item on the plate. Each meal fills your daily ring, so you always see what's left.</p>
+                <div class="hero-actions">
+                    <a class="store-badge" href="https://apps.apple.com/app/id6749366793" rel="noopener">
+                        <img src="img/app-store-badge.svg" width="162" height="54" alt="Download on the App Store">
+                    </a>
+                    <p class="hero-note">Free to download. Premium adds unlimited photo scans, voice logging and AI&nbsp;insights.</p>
+                </div>
+            </div>
+            <div class="hero-media">
+                <svg class="orbit" viewBox="0 0 600 600" aria-hidden="true" focusable="false">
+                    <defs><linearGradient id="ring-gradient-hero" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#00CCB3"/><stop offset="1" stop-color="#66E666"/></linearGradient></defs>
+                    <circle class="orbit-track" cx="300" cy="300" r="270"/>
+                    <circle class="orbit-arc" cx="300" cy="300" r="270" pathLength="100" transform="rotate(-90 300 300)" stroke="url(#ring-gradient-hero)"/>
+                    <circle class="orbit-track orbit-thin" cx="300" cy="300" r="228"/>
+                    <circle class="orbit-macro orbit-protein" cx="300" cy="300" r="228" pathLength="100" transform="rotate(-90 300 300)"/>
+                    <circle class="orbit-track orbit-thin" cx="300" cy="300" r="206"/>
+                    <circle class="orbit-macro orbit-carbs" cx="300" cy="300" r="206" pathLength="100" transform="rotate(-90 300 300)"/>
+                    <circle class="orbit-track orbit-thin" cx="300" cy="300" r="184"/>
+                    <circle class="orbit-macro orbit-fat" cx="300" cy="300" r="184" pathLength="100" transform="rotate(-90 300 300)"/>
+                </svg>
+                <div class="phone phone--hero">
+                    <img src="img/journal-today.webp" width="720" height="1564" fetchpriority="high"
+                         alt="Calorify's Journal on iPhone: a 12-day streak, and a ring showing 1,450 kcal left of a 2,200 kcal goal, with 750 eaten, 320 burned, and protein, carbs and fat rings below it.">
+                </div>
+            </div>
+        </section>
+
+        <section class="group" id="log" aria-labelledby="log-title">
+            <div class="group-head">
+                <p class="eyebrow">Scan</p>
+                <h2 id="log-title" class="display">Four ways to log a meal</h2>
+                <p>Pick the way that fits the moment. Every entry lands on the meal and day you choose.</p>
+                <nav class="modes" aria-label="Ways to log a meal">
+                    <a href="#photo">Photo</a>
+                    <a href="#search">Search</a>
+                    <a href="#voice">Voice</a>
+                    <a href="#manual">Manual</a>
+                </nav>
+            </div>
+
+            <article class="feature" id="photo" aria-labelledby="photo-title">
+                <div class="feature-copy">
+                    <h3 id="photo-title" class="feature-label">AI photo scan</h3>
+                    <p class="tagline display">Point. Snap. Know.</p>
+                    <p>Take a photo or choose one from your library. Calorify finds each item on the plate and estimates its portion, calories, protein, carbs and fat.</p>
+                    <ul class="dots">
+                        <li>Tap any item to fix its name or portion, or remove it.</li>
+                        <li>Before you add the meal, the ring shows what's left after it.</li>
+                        <li>Add it to breakfast, lunch, dinner or a snack, today or on an earlier day.</li>
+                    </ul>
+                    <p class="plan"><span class="plan-key">AI estimates. You have the final say.</span> Free plan: 3-day trial of photo scans. Premium: unlimited.</p>
+                </div>
+                <div class="feature-media">
+                    <div class="phone">
+                        <img src="img/scan-result.webp" width="720" height="1564" loading="lazy" decoding="async"
+                             alt="A scan result for a photo of a falafel plate: falafel, 4 pieces, 260 kcal; guacamole, 2 tbsp, 90 kcal; salad and seeds, 1 bowl, 260 kcal. The ring shows +610 kcal for this meal and 840 kcal left after it.">
+                    </div>
+                    <div class="shot-card">
+                        <img src="img/item-edit-card.webp" width="640" height="454" loading="lazy" decoding="async"
+                             alt="The Edit food sheet for the falafel: its name, a portion of ×1 at 260 kcal with minus and plus buttons, and Remove item.">
+                    </div>
+                </div>
+            </article>
+
+            <article class="feature feature--flip" id="voice" aria-labelledby="voice-title">
+                <div class="feature-copy">
+                    <h3 id="voice-title" class="feature-label">Voice logging <span class="pill">Premium</span></h3>
+                    <p class="tagline display">Or just say it.</p>
+                    <p>Tap the microphone and say what you ate, the way you'd tell a friend. Check the transcript, edit it if you need to, and Calorify turns it into foods with calories and macros you can review before adding.</p>
+                    <ul class="quotes" aria-label="Things you can say">
+                        <li>“I ate an apple for breakfast”</li>
+                        <li>“Log 2 slices of pizza for lunch”</li>
+                        <li>“Add a cup of coffee”</li>
+                    </ul>
+                </div>
+                <div class="feature-media">
+                    <div class="phone">
+                        <img src="img/voice.webp" width="720" height="1564" loading="lazy" decoding="async"
+                             alt="Voice mode after a recording: the transcription reads 'Two eggs and a slice of toast' while Calorify analyzes the food.">
+                    </div>
+                    <div class="shot-card">
+                        <img src="img/voice-review-card.webp" width="640" height="564" loading="lazy" decoding="async"
+                             alt="The foods found from the recording: eggs, 2 pieces, 140 kcal, and toast, 1 slice, 80 kcal. The meal adds 220 kcal and leaves 1,230 kcal for the day.">
+                    </div>
+                </div>
+            </article>
+
+            <article class="feature" id="search" aria-labelledby="search-title">
+                <div class="feature-copy">
+                    <h3 id="search-title" class="feature-label">Search and manual entry</h3>
+                    <p class="tagline display">Search it, or add it yourself.</p>
+                    <p>Search foods with your favorites and recent foods one tap away, then choose the portion and the meal.</p>
+                    <p id="manual">Not there? Enter the name, portion and calories yourself. Protein, carbs and fat are optional.</p>
+                    <p class="plan">Free on every plan.</p>
+                </div>
+                <div class="feature-media">
+                    <div class="shot-card shot-card--main">
+                        <img src="img/search-card.webp" width="720" height="763" loading="lazy" decoding="async"
+                             alt="Search mode with favorites and recent foods: oatmeal, 300 kcal, and chicken salad, 450 kcal, each with an add button.">
+                    </div>
+                    <div class="shot-card">
+                        <img src="img/manual-card.webp" width="640" height="450" loading="lazy" decoding="async"
+                             alt="The manual entry card: 'Add it yourself. Enter the name, portion and calories; macros are optional', with a Start manual entry button.">
+                    </div>
+                </div>
+            </article>
+        </section>
+
+        <section class="group" id="journal" aria-labelledby="journal-title">
+            <div class="group-head">
+                <p class="eyebrow">Journal</p>
+                <h2 id="journal-title" class="display">Every meal fills the ring</h2>
+                <p>Your calorie goal and macro targets are calculated from your profile, activity level and goal. Adjust them any time in Profile.</p>
+            </div>
+
+            <article class="feature feature--ring" id="ring" aria-labelledby="ring-title">
+                <h3 id="ring-title" class="feature-label">The daily ring</h3>
+                <div class="annotated">
+                    <div class="annotated-shot">
+                        <img src="img/ring-detail.webp" width="760" height="991" loading="lazy" decoding="async"
+                             alt="The Journal's week strip, a small ring for each day from Sunday the 11th to today, Friday the 16th, above the daily ring: 1,450 kcal left; eaten 750, goal 2,200, burned 320; protein 50 of 138 g, carbs 74 of 248 g, fat 27 of 73 g.">
+                    </div>
+                    <ul class="callouts">
+                        <li style="--at: 11%"><strong>Your week</strong> Every day gets a ring of its own, so a missed day is easy to spot.</li>
+                        <li style="--at: 42.5%"><strong>Calories left</strong> What's left of today's goal. Go over and the ring tells you by how much.</li>
+                        <li style="--at: 70%"><strong>Eaten, goal, burned</strong> Burned comes from Apple Health, once you connect it.</li>
+                        <li style="--at: 85%"><strong>Protein, carbs, fat</strong> Grams so far against your own targets.</li>
+                    </ul>
+                </div>
+            </article>
+
+            <div class="pair">
+                <article class="mini" id="water" aria-labelledby="water-title">
+                    <h3 id="water-title" class="feature-label">Water tracking</h3>
+                    <p class="tagline display">A glass, a tap.</p>
+                    <p>Add 250 or 500 ml with one tap, or fluid ounces if you use US units. Your daily goal follows your body weight, and a water streak counts the days you reach it.</p>
+                    <div class="shot-card shot-card--flat">
+                        <img src="img/water-chart-card.webp" width="760" height="278" loading="lazy" decoding="async"
+                             alt="Water per day for a week against a 2,450 ml goal: the goal was met on 4 of 7 days.">
+                    </div>
+                </article>
+                <article class="mini" id="streaks" aria-labelledby="streaks-title">
+                    <h3 id="streaks-title" class="feature-label">Streaks and achievements</h3>
+                    <p class="tagline display">Keep the streak.</p>
+                    <p>Log on consecutive days to grow your streak. 22 achievements mark streaks from 3 days to a full year, days on your calorie, protein and water goals, and logging milestones.</p>
+                    <div class="shot-card shot-card--flat">
+                        <img src="img/streak-card.webp" width="760" height="290" loading="lazy" decoding="async"
+                             alt="Report tiles: 7 of 7 days logged, 6 days on target, a 12-day current streak and a 21-day best streak.">
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section class="group" id="reports" aria-labelledby="reports-title">
+            <div class="group-head">
+                <p class="eyebrow">Reports</p>
+                <h2 id="reports-title" class="display">Watch your week fill up</h2>
+                <p>Switch between a week, a month, 3 months and a year to see how your days add up.</p>
+            </div>
+
+            <article class="feature" id="report-tabs" aria-labelledby="report-tabs-title">
+                <div class="feature-copy">
+                    <h3 id="report-tabs-title" class="feature-label">Reports for any range</h3>
+                    <p class="tagline display">Every day a ring.</p>
+                    <dl class="tabs">
+                        <div><dt>Overview</dt><dd>Average calories per logged day, days on target (within 10%), your current and best streak, and calories against your goal.</dd></div>
+                        <div><dt>Nutrition</dt><dd>Where your calories come from, daily averages against your targets, your meals, your most-logged foods, and fiber, sugar and sodium.</dd></div>
+                        <div><dt>Progress</dt><dd>Every day as a ring, water per day, and steps and active energy from Apple Health.</dd></div>
+                    </dl>
+                    <p class="plan">Overview, Nutrition, Progress and water stay free.</p>
+                </div>
+                <div class="feature-media">
+                    <div class="phone">
+                        <img src="img/reports-overview.webp" width="720" height="1564" loading="lazy" decoding="async"
+                             alt="Reports for a week, Overview tab: 2,180 kcal on average per logged day, 7 of 7 days logged, up 4% on the previous 7 days, 6 days on target, a 12-day streak with a best of 21 days, and a bar for each of the last 7 days.">
+                    </div>
+                </div>
+            </article>
+
+            <article class="feature feature--flip" id="insights" aria-labelledby="insights-title">
+                <div class="feature-copy">
+                    <h3 id="insights-title" class="feature-label">AI insights <span class="pill">Premium</span></h3>
+                    <p class="tagline display">Small steps from what you really&nbsp;ate.</p>
+                    <p>For the range you pick, Calorify reads your logged days and shows the one or two changes that matter most, each with the numbers behind it and one thing to try.</p>
+                    <ul class="dots">
+                        <li>When a tip is about timing, turn on a water or meal reminder with one tap.</li>
+                        <li>See what went well compared with the period before.</li>
+                    </ul>
+                    <p class="plan">Generated from your logged days only. Not medical advice.</p>
+                </div>
+                <div class="feature-media">
+                    <div class="phone">
+                        <img src="img/insights.webp" width="720" height="1564" loading="lazy" decoding="async"
+                             alt="Insights for a week: 'Water dips mid-week', the water goal reached on 4 of 7 days, with water per day against a 2,450 ml goal, a tip and a reminder button, then a timing insight, 'Evenings run over'.">
+                    </div>
+                    <div class="shot-card">
+                        <img src="img/insight-reminder-card.webp" width="640" height="235" loading="lazy" decoding="async"
+                             alt="The tip 'Try a glass of water at 3:00 PM' and the button 'Turn on 3:00 PM water reminder'.">
+                    </div>
+                </div>
+            </article>
+        </section>
+
+        <section class="group" id="everywhere" aria-labelledby="everywhere-title">
+            <div class="group-head">
+                <p class="eyebrow">Widgets and devices</p>
+                <h2 id="everywhere-title" class="display">Your ring, at a glance</h2>
+                <p>Keep today's ring in view without opening the app. Tap a widget to open your journal.</p>
+            </div>
+
+            <article class="feature feature--widgets" id="widgets" aria-labelledby="widgets-title">
+                <div class="feature-copy">
+                    <h3 id="widgets-title" class="feature-label">Home Screen and Lock Screen widgets</h3>
+                    <p class="tagline display">Five sizes, one ring.</p>
+                    <dl class="facts">
+                        <div><dt>Small</dt><dd>Home Screen: today's ring and the calories left.</dd></div>
+                        <div><dt>Medium</dt><dd>Home Screen: the ring, protein, carbs, fat and water, and a button to scan a meal.</dd></div>
+                        <div><dt>Circular</dt><dd>Lock Screen: the calories left as a ring.</dd></div>
+                        <div><dt>Rectangular</dt><dd>Lock Screen: calories left, plus protein against your target.</dd></div>
+                        <div><dt>Inline</dt><dd>Lock Screen: one line beside the date with the calories left.</dd></div>
+                    </dl>
+                </div>
+                <div class="feature-media">
+                    <div class="shot-card shot-card--widgets">
+                        <img src="img/widgets.webp" width="720" height="1096" loading="lazy" decoding="async"
+                             alt="Calorify's widgets: a small Home Screen widget with 1,450 kcal left of 2,200; a medium one with the ring, protein 50 of 138 g, carbs 74 of 248 g, fat 27 of 73 g, 1,250 ml of water and a scan button; and circular and rectangular Lock Screen widgets with 1,450 kcal left and protein 50 of 138 g.">
+                    </div>
+                </div>
+            </article>
+
+            <article class="feature feature--flip feature--devices" id="devices" aria-labelledby="devices-title">
+                <div class="feature-copy">
+                    <h3 id="devices-title" class="feature-label">iPhone and iPad, light and dark</h3>
+                    <p class="tagline display">Made to fit in.</p>
+                    <dl class="facts">
+                        <div><dt>Devices</dt><dd>iPhone and iPad with iOS or iPadOS 17.6 or later</dd></div>
+                        <div><dt>Appearance</dt><dd>Light, dark, or match your system</dd></div>
+                        <div><dt>Units</dt><dd>Metric or US: ml or fl oz, cm or feet and inches</dd></div>
+                        <div><dt>Apple Health</dt><dd>Optional: fill in your profile and see steps and active energy</dd></div>
+                        <div><dt>Languages</dt><dd>15, chosen in Profile:
+                            <ul class="langs">
+                                <li lang="en">English</li><li lang="tr">Türkçe</li><li lang="de">Deutsch</li><li lang="es">Español</li><li lang="fr">Français</li><li lang="it">Italiano</li><li lang="pt">Português</li><li lang="nl">Nederlands</li><li lang="pl">Polski</li><li lang="ru">Русский</li><li lang="ja">日本語</li><li lang="ko">한국어</li><li lang="zh-Hans">简体中文</li><li lang="ar" dir="rtl">العربية</li><li lang="hi">हिन्दी</li>
+                            </ul>
+                        </dd></div>
+                    </dl>
+                </div>
+                <div class="feature-media feature-media--pair">
+                    <div class="phone">
+                        <img src="img/journal-today-light.webp" width="720" height="1564" loading="lazy" decoding="async"
+                             alt="The Journal in light appearance: 1,450 kcal left of 2,200, with protein, carbs and fat rings.">
+                    </div>
+                    <div class="phone">
+                        <img src="img/journal-today.webp" width="720" height="1564" loading="lazy" decoding="async"
+                             alt="The same Journal screen in dark appearance.">
+                    </div>
+                </div>
+            </article>
+        </section>
+
+        <section class="group" id="premium" aria-labelledby="premium-title">
+            <div class="group-head">
+                <p class="eyebrow">Free and Premium</p>
+                <h2 id="premium-title" class="display">What you get</h2>
+                <p>The core of Calorify is free. Calorify Premium unlocks the AI features without limits.</p>
+            </div>
+            <div class="compare-wrap">
+                <table class="compare">
+                    <caption class="visually-hidden">Features on the free plan and with Calorify Premium</caption>
+                    <thead>
+                        <tr><th scope="col">Feature</th><th scope="col">Free</th><th scope="col">Premium</th></tr>
+                    </thead>
+                    <tbody>
+                        <tr><th scope="row">Journal, search and manual entry</th><td><span class="mark yes" role="img" aria-label="Included"></span></td><td><span class="mark yes" role="img" aria-label="Included"></span></td></tr>
+                        <tr><th scope="row">Reports and water</th><td><span class="mark yes" role="img" aria-label="Included"></span></td><td><span class="mark yes" role="img" aria-label="Included"></span></td></tr>
+                        <tr><th scope="row">Photo scans</th><td>3-day trial</td><td class="strong">Unlimited</td></tr>
+                        <tr><th scope="row">Voice logging</th><td><span class="mark no" role="img" aria-label="Not included"></span></td><td><span class="mark yes" role="img" aria-label="Included"></span></td></tr>
+                        <tr><th scope="row">AI insights</th><td><span class="mark no" role="img" aria-label="Not included"></span></td><td><span class="mark yes" role="img" aria-label="Included"></span></td></tr>
+                    </tbody>
+                </table>
+                <div class="compare-notes">
+                    <p>Calorify Premium is an auto-renewing monthly or yearly subscription. The app shows the price in your currency before you subscribe, and you can cancel anytime in your Apple Account settings.</p>
+                    <p>The 3-day photo scan trial starts when you finish setup on a new account, includes a daily number of scans, and is available once per person and device.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="group" id="faq" aria-labelledby="faq-title">
+            <div class="group-head">
+                <p class="eyebrow">Questions</p>
+                <h2 id="faq-title" class="display">Frequently asked</h2>
+            </div>
+            <div class="faq">
+                <details>
+                    <summary>How does Calorify count calories?</summary>
+                    <p>Take a photo and Calorify's AI estimates the portion, calories, protein, carbs and fat of each item on the plate. You can also say what you ate, search for a food or enter it yourself. You can check and edit every item before it's added to your day.</p>
+                </details>
+                <details>
+                    <summary>Is Calorify free?</summary>
+                    <p>Calorify is free to download. The journal, food search, manual entry, reports and water tracking are free, and the free plan includes a 3-day trial of photo scans. Unlimited photo scans, voice logging and AI insights come with Calorify Premium, an auto-renewing monthly or yearly subscription. The app shows the price in your currency before you subscribe.</p>
+                </details>
+                <details>
+                    <summary>How accurate are the photo estimates?</summary>
+                    <p>They're AI estimates, so treat them as a starting point. Tap any item to fix its name or portion, or remove it, before you add the meal. Calorify is not a medical device and doesn't give medical advice.</p>
+                </details>
+                <details>
+                    <summary>Does Calorify work with Apple Health?</summary>
+                    <p>Yes, if you want it to. With your permission, Calorify reads your height, weight, date of birth and sex from Apple Health to fill in your profile, and your steps and active energy to show your activity in the journal and reports. Connecting Apple Health is optional.</p>
+                </details>
+                <details>
+                    <summary>Which devices and languages does Calorify support?</summary>
+                    <p>Calorify runs on iPhone and iPad with iOS or iPadOS 17.6 or later, in light or dark appearance, and in 15 languages: English, Turkish, German, Spanish, French, Italian, Portuguese, Dutch, Polish, Russian, Japanese, Korean, Simplified Chinese, Arabic and Hindi.</p>
+                </details>
+                <details>
+                    <summary>What happens to my food photos and voice recordings?</summary>
+                    <p>When you scan a photo or record a voice entry, it's sent to our servers and to OpenAI to estimate the foods and their nutrition values. We don't store voice recordings. We never sell your personal information or share your food logs with advertisers. The <a href="privacy.html">Privacy Policy</a> has the details.</p>
+                </details>
+            </div>
+            <p class="faq-more">Something else? See <a href="support/">Support</a> for subscriptions, restoring purchases and deleting your account, or email <a href="mailto:lkmcelik@hotmail.com">lkmcelik@hotmail.com</a>.</p>
+        </section>
+
+        <section class="finale" id="download" aria-labelledby="download-title">
+            <svg class="finale-ring" viewBox="0 0 600 600" aria-hidden="true" focusable="false">
+                <defs><linearGradient id="ring-gradient-finale" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#00CCB3"/><stop offset="1" stop-color="#66E666"/></linearGradient></defs>
+                <circle class="orbit-track" cx="300" cy="300" r="270"/>
+                <circle class="finale-arc" cx="300" cy="300" r="270" pathLength="100" transform="rotate(-90 300 300)" stroke="url(#ring-gradient-finale)"/>
+            </svg>
+            <div class="finale-copy">
+                <h2 id="download-title" class="display">Start with your next meal</h2>
+                <p>Calorify is free to download for iPhone and iPad.</p>
+                <a class="store-badge" href="https://apps.apple.com/app/id6749366793" rel="noopener">
+                    <img src="img/app-store-badge.svg" width="162" height="54" alt="Download on the App Store">
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="footer-inner">
+            <div class="footer-brand">
+                <img src="img/icon-64.png" alt="" width="28" height="28">
                 <span>Calorify</span>
             </div>
-            <button class="nav-toggle" aria-label="Toggle navigation">
-                <span></span>
-                <span></span>
-                <span></span>
-            </button>
-            <div class="nav-menu">
-                <a href="#features" class="nav-link">Features</a>
-                <a href="#benefits" class="nav-link">Benefits</a>
-                <a href="privacy.html" class="nav-link">Privacy</a>
-                <a href="terms.html" class="nav-link">Terms</a>
-                <a href="#download" class="nav-link nav-cta">Download</a>
-            </div>
-        </div>
-    </nav>
-
-    <section class="hero">
-        <div class="hero-content">
-            <h1 class="hero-title">Smart Nutrition Tracking</h1>
-            <p class="hero-subtitle">Your comprehensive iOS companion for tracking calories, macros, and achieving your health goals with AI-powered food recognition.</p>
-            <div class="hero-buttons">
-                <a href="https://apps.apple.com/tr/app/calorify-ai-calorie-counter/id6749366793" class="btn-primary" target="_blank" rel="noopener noreferrer">
-                    <svg class="apple-icon" viewBox="0 0 24 24">
-                        <path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.81-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/>
-                    </svg>
-                    Download on App Store
-                </a>
-                <a href="#features" class="btn-secondary">Learn More</a>
-            </div>
-        </div>
-        <div class="hero-image">
-            <div class="phone-mockup">
-                <div class="phone-screen">
-                    <img src="img/1.png" alt="Calorify App Screenshot" class="app-screenshot">
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="app-showcase">
-        <div class="container">
-            <h2 class="section-title">See Calorify in Action</h2>
-            <p class="section-subtitle">Explore the intuitive interface and powerful features</p>
-            <div class="showcase-carousel">
-                <div class="carousel-container">
-                    <button class="carousel-btn carousel-prev" aria-label="Previous screenshot">
-                        <svg viewBox="0 0 24 24">
-                            <path d="M15.41 7.41L14 6l-6 6 6 6 1.41-1.41L10.83 12z"/>
-                        </svg>
-                    </button>
-                    <div class="carousel-track">
-                        <div class="carousel-slide active">
-                            <img src="img/1.png" alt="Home Dashboard" loading="lazy">
-                        </div>
-                        <div class="carousel-slide">
-                            <img src="img/2.png" alt="Food Tracking" loading="lazy">
-                        </div>
-                        <div class="carousel-slide">
-                            <img src="img/3.png" alt="Nutrition Analysis" loading="lazy">
-                        </div>
-                    </div>
-                    <button class="carousel-btn carousel-next" aria-label="Next screenshot">
-                        <svg viewBox="0 0 24 24">
-                            <path d="M8.59 16.59L10 18l6-6-6-6-1.41 1.41L13.17 12z"/>
-                        </svg>
-                    </button>
-                </div>
-                <div class="carousel-dots">
-                    <button class="carousel-dot active" data-slide="0" aria-label="Go to slide 1"></button>
-                    <button class="carousel-dot" data-slide="1" aria-label="Go to slide 2"></button>
-                    <button class="carousel-dot" data-slide="2" aria-label="Go to slide 3"></button>
-                </div>
-            </div>
-            <div class="showcase-grid">
-                <div class="showcase-item">
-                    <img src="img/1.png" alt="Dashboard" loading="lazy">
-                </div>
-                <div class="showcase-item">
-                    <img src="img/2.png" alt="Food Tracking" loading="lazy">
-                </div>
-                <div class="showcase-item">
-                    <img src="img/3.png" alt="Analytics" loading="lazy">
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section id="features" class="features">
-        <div class="container">
-            <h2 class="section-title">Powerful Features</h2>
-            <p class="section-subtitle">Everything you need to track and improve your nutrition</p>
-            <div class="features-grid">
-                <div class="feature-card">
-                    <div class="feature-icon">
-                        <svg viewBox="0 0 24 24">
-                            <path d="M9 2L7.17 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2h-3.17L15 2H9zm3 15c-2.76 0-5-2.24-5-5s2.24-5 5-5 5 2.24 5 5-2.24 5-5 5z"/>
-                        </svg>
-                    </div>
-                    <h3>AI Food Scanner</h3>
-                    <p>Instantly analyze nutrition by taking a photo of your meal with advanced AI recognition</p>
-                </div>
-                <div class="feature-card">
-                    <div class="feature-icon">
-                        <svg viewBox="0 0 24 24">
-                            <path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zM9 17H7v-7h2v7zm4 0h-2V7h2v10zm4 0h-2v-4h2v4z"/>
-                        </svg>
-                    </div>
-                    <h3>Detailed Analytics</h3>
-                    <p>View comprehensive reports and insights about your nutrition patterns and progress</p>
-                </div>
-                <div class="feature-card">
-                    <div class="feature-icon">
-                        <svg viewBox="0 0 24 24">
-                            <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
-                        </svg>
-                    </div>
-                    <h3>Track Everything</h3>
-                    <p>Monitor calories, macros (protein, carbs, fats), micronutrients, and water intake</p>
-                </div>
-                <div class="feature-card">
-                    <div class="feature-icon">
-                        <svg viewBox="0 0 24 24">
-                            <path d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zM12 20c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8zm3.5-9c.83 0 1.5-.67 1.5-1.5S16.33 8 15.5 8 14 8.67 14 9.5s.67 1.5 1.5 1.5zm-7 0c.83 0 1.5-.67 1.5-1.5S9.33 8 8.5 8 7 8.67 7 9.5 7.67 11 8.5 11zm3.5 6.5c2.33 0 4.31-1.46 5.11-3.5H6.89c.8 2.04 2.78 3.5 5.11 3.5z"/>
-                        </svg>
-                    </div>
-                    <h3>Achievements</h3>
-                    <p>Stay motivated with streaks, badges, and personalized goals to celebrate your progress</p>
-                </div>
-                <div class="feature-card">
-                    <div class="feature-icon">
-                        <svg viewBox="0 0 24 24">
-                            <path d="M21 8c-1.45 0-2.26 1.44-1.93 2.51l-3.55 3.56c-.3-.09-.74-.09-1.04 0l-2.55-2.55C12.27 10.45 11.46 9 10 9c-1.45 0-2.27 1.44-1.93 2.52l-4.56 4.55C2.44 15.74 1 16.55 1 18c0 1.1.9 2 2 2 1.45 0 2.26-1.44 1.93-2.51l4.55-4.56c.3.09.74.09 1.04 0l2.55 2.55C12.73 16.55 13.54 18 15 18c1.45 0 2.27-1.44 1.93-2.52l3.56-3.55C21.56 12.26 23 11.45 23 10c0-1.1-.9-2-2-2z"/>
-                        </svg>
-                    </div>
-                    <h3>Progress Tracking</h3>
-                    <p>Visualize your journey with charts and trends for weight, nutrition, and health metrics</p>
-                </div>
-                <div class="feature-card">
-                    <div class="feature-icon">
-                        <svg viewBox="0 0 24 24">
-                            <path d="M16.5 3c-1.74 0-3.41.81-4.5 2.09C10.91 3.81 9.24 3 7.5 3 4.42 3 2 5.42 2 8.5c0 3.78 3.4 6.86 8.55 11.54L12 21.35l1.45-1.32C18.6 15.36 22 12.28 22 8.5 22 5.42 19.58 3 16.5 3zm-4.4 15.55l-.1.1-.1-.1C7.14 14.24 4 11.39 4 8.5 4 6.5 5.5 5 7.5 5c1.54 0 3.04.99 3.57 2.36h1.87C13.46 5.99 14.96 5 16.5 5c2 0 3.5 1.5 3.5 3.5 0 2.89-3.14 5.74-7.9 10.05z"/>
-                        </svg>
-                    </div>
-                    <h3>HealthKit Integration</h3>
-                    <p>Seamlessly sync with Apple Health to centralize all your health and fitness data</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section id="benefits" class="benefits">
-        <div class="container">
-            <h2 class="section-title">Why Choose Calorify?</h2>
-            <div class="benefits-grid">
-                <div class="benefit-item">
-                    <div class="benefit-number">01</div>
-                    <h3>Privacy First</h3>
-                    <p>Your data belongs to you. We never sell personal information and use encryption to protect your privacy.</p>
-                </div>
-                <div class="benefit-item">
-                    <div class="benefit-number">02</div>
-                    <h3>Science-Based</h3>
-                    <p>Built on nutritional science with accurate food databases and personalized recommendations.</p>
-                </div>
-                <div class="benefit-item">
-                    <div class="benefit-number">03</div>
-                    <h3>Easy to Use</h3>
-                    <p>Intuitive interface designed for quick logging and effortless tracking throughout your day.</p>
-                </div>
-                <div class="benefit-item">
-                    <div class="benefit-number">04</div>
-                    <h3>Comprehensive</h3>
-                    <p>Track not just calories but complete nutrition including vitamins, minerals, and hydration.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section id="download" class="cta">
-        <div class="container">
-            <h2 class="cta-title">Start Your Health Journey Today</h2>
-            <p class="cta-subtitle">Join thousands of users achieving their nutrition goals with Calorify</p>
-            <div class="cta-buttons">
-                <a href="https://apps.apple.com/tr/app/calorify-ai-calorie-counter/id6749366793" class="btn-primary btn-large">
-                    <svg class="apple-icon" viewBox="0 0 24 24">
-                        <path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.81-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/>
-                    </svg>
-                    Get Calorify Free
-                </a>
-            </div>
-            <p class="cta-note">Free to download • Premium from $6.99/month • 3-day free trial</p>
-        </div>
-    </section>
-
-    <footer class="footer">
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-brand">
-                    <img src="AppIcon.png" alt="Calorify Logo" class="logo">
-                    <span>Calorify</span>
-                </div>
-                <div class="footer-links">
-                    <a href="privacy.html">Privacy Policy</a>
-                    <a href="terms.html">Terms of Service</a>
-                    <a href="mailto:lkmcelik@hotmail.com">Contact</a>
-                </div>
-            </div>
-            <div class="footer-bottom">
-                <p>&copy; 2025 Calorify. All rights reserved.</p>
+            <nav class="footer-links" aria-label="Legal and contact">
+                <a href="support/">Support</a>
+                <a href="privacy.html">Privacy Policy</a>
+                <a href="terms.html">Terms of Service</a>
+                <a href="mailto:lkmcelik@hotmail.com">Contact</a>
+            </nav>
+            <div class="footer-fine">
+                <p>Calorify is not a medical device. Nutrition values are estimates for general information.</p>
+                <p>Apple, the Apple logo, iPhone, iPad, Apple Health and App Store are trademarks of Apple Inc., registered in the U.S. and other countries.</p>
+                <p>&copy; 2026 Calorify</p>
             </div>
         </div>
     </footer>
 
-    <script src="script.js"></script>
+    <script src="script.js" defer></script>
 </body>
 </html>
