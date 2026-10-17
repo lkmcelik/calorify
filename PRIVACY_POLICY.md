@@ -1,6 +1,6 @@
 # Privacy Policy for Calorify
 
-Last Updated: October 16, 2026
+Last Updated: October 17, 2026
 
 ## Introduction
 
@@ -82,7 +82,7 @@ Calorify ("we," "our," or "us") is committed to protecting your privacy. This Pr
 
 ### Advertising Attribution:
 
-With your consent (via App Tracking Transparency), we share limited device identifiers and app events (such as app installs and launches, onboarding steps, in-app purchases and free-trial starts) with Meta for advertising measurement purposes. Purchase and free-trial events are logged automatically by the Meta SDK. We never share your food logs, health data, or nutrition information with advertisers. See the [Third-Party Services](#third-party) section for full details.
+With your consent (via App Tracking Transparency), we share limited device identifiers and app events (such as app installs and launches, onboarding steps, in-app purchases and free-trial starts) with Meta for advertising measurement purposes. Purchase and free-trial events are logged automatically by the Meta SDK. We never share your food logs, health data, or nutrition information with advertisers. See the [Third-Party Services](#third-party) section for full details. If you installed Calorify from an Apple Ads ad, we also receive campaign-level attribution for that install from Apple, without any advertising identifier; see [Apple Ads Attribution](#apple-ads-attribution).
 
 ### We MAY Share Data:
 
@@ -114,6 +114,12 @@ OpenAI's privacy policy: [https://openai.com/policies/privacy-policy](https://op
 We use Resend to send transactional emails such as password reset and verification codes. Resend receives your email address and the content of these emails.
 
 Resend's privacy policy: [https://resend.com/legal/privacy-policy](https://resend.com/legal/privacy-policy)
+
+### Apple Ads Attribution
+
+Once after you sign in, the app asks Apple's AdServices framework for an attribution token and sends it to our servers. Our servers exchange the token with Apple for campaign-level information about your install: whether it came from an Apple Ads ad on the App Store and, if it did, the ad's campaign, ad group, keyword, country or region, and the date of the ad interaction. If the install didn't come from an ad, we only store that answer. We store this with your account to measure which campaigns bring people who keep using the app. It contains no advertising identifier (IDFA), and Apple does not treat it as tracking, so no App Tracking Transparency permission is needed. We don't share it with anyone else, and it is deleted with your account.
+
+Apple's privacy policy: [https://www.apple.com/legal/privacy/](https://www.apple.com/legal/privacy/)
 
 ### Meta/Facebook SDK & SKAdNetwork
 
